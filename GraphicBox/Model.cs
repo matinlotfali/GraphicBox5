@@ -1,10 +1,15 @@
-﻿using System;
+﻿using OpenTK.Graphics;
+using System;
+
 namespace GraphicBox
 {
-    public class Model
-    {
-        public Model()
-        {
-        }
+    internal class Model
+    {		
+		public int width = 200;
+		public int height = 200;
+        public int frameRate = 100;
+        public bool firstDraw = true;
+        public Color4 stroke, fill;
+        public int frameDrawElapseMiliseconds;
     }
 }
